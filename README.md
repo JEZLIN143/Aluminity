@@ -1,0 +1,1 @@
+These html files contain annimated contents. For these animation to work with there respective background pictures should be available. For not making this a huge bundle of files and chaos there will not be pictures available with them.
