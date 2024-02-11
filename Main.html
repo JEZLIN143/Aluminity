@@ -1,0 +1,199 @@
+<html>
+    <head></head>
+    <body>
+        <div class="sidenav" id="sidenav">
+            <a href="#">☰</a>
+            <a href="Admin.html" class="admin1">ADMIN</a>
+        </div>
+        <fieldset class="glass">
+        <div class="intro-container">
+            <p class="intro-text" style="color: white;">LOGIN AS:-</p>
+        </div>
+                <div class="intro">
+                <form><br><br>
+                    <div class="intro-text">
+                        
+                    <a href="Alumni.html" class="button">ALUMNI</a><br><br>
+                    <a href="Student.html" class="button"> STUDENT</a><br><br>
+                    </div>
+                </div>
+                </div>
+                </form>
+            </fieldset>
+    </body>
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 1px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #11111100;
+            overflow-x: hidden;
+            padding-top: 20px;
+            transition: width 0.7s;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(90px);
+            border-radius: 19px;
+
+
+        }
+        
+        .sidenav:hover {
+            width: 300px;
+        }
+        .admin1{
+            margin-right: 0;
+        }
+        
+        .sidenav a {
+            padding: 10px 8px 10px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #ffffff;
+            display: block;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        .sidenav a:hover {
+            color: #ff0000;
+        }
+        
+           .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 0px;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(900px);
+    }
+
+    .button:hover {
+        background-color: #ffffff;
+        color: black;
+    }
+
+    .button::after {
+        content: "";
+        background: #ff0000;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 2.0s
+    }
+
+    .button:active::after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+    }
+    .button {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 150px;
+        font-weight: bolder;
+        font-variant: small-caps;
+        font-size: 50px;
+        padding: 20px;
+        color: #fff;
+        background-color: #614f5b68;
+        backdrop-filter: blur(10px);
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        align-items: center;
+    text-align: center;
+      
+    }
+
+    .button:hover {
+        transform: scale(0.9);
+    }
+        fieldset{
+            border-radius: 0px;
+            border-width: 0;
+            width: 600px;
+            align-items: center;
+            text-align: center;
+            align-items: center;
+    text-align: center;
+            
+        }
+        .intro {
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 4.5s ease forwards;
+    }
+        
+    .intro-container {
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 3s ease forwards;
+    }
+
+    .intro-text {
+        font-size: 40px;
+        color: #333;
+        align-items: center;
+    text-align: center;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0.8;
+        }
+    }
+    html{
+        background-image: url(ipad6.jpg);
+        background-size: cover;
+        align-items: center;
+        text-align: center;
+    }
+     .glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(900px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.271);
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+}
+p{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    text-align: center;
+}
+body{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    
+}
+    </style>
+</html>
