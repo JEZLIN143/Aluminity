@@ -48,13 +48,11 @@
             top: 0;
             right: -4500%;
             width: 100%;
-            background-color: #fff;
+            background-color: #ffffff00;
             padding: 20px;
             height: 300px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: right 0.5s ease;
-            background-color: #000000;
         }
 
         .content.active {
@@ -68,7 +66,7 @@
         }
   header {
             background-color: #333;
-            color: #fff;
+            color: #000000;
             padding: 20px 0;
             text-align: center;
         }
@@ -78,7 +76,7 @@
             text-align: center;
         }
   nav a {
-            color: #fff;
+            color: #000000;
             text-decoration: none;
             margin: 0 20px;
             font-size: 18px;
@@ -90,7 +88,7 @@
             padding: 0 20px;
             position: relative;
             background-color: #333;
-            color: white;
+            color: rgb(114, 168, 255);
         }
    .content.active {
             right: 0;
@@ -106,15 +104,22 @@ button{
   border-width: 0px;
 }
 .navigation {
- 
+    margin-left: 390px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
     text-align: center;
-    margin: 0 auto;
+    
     margin-top: 30px;
   animation: slideIn 1.5s ease forwards;
+  border-radius: 90px;
+    backdrop-filter: blur(18px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.577);
+    height: 140px;
+    width: 900px;
+    right: 90px;
 
 }
 @keyframes slideIn {
@@ -124,26 +129,12 @@ button{
   }
   to {
     transform: translate(0%, -10%);
-    opacity: 1;
+    opacity: 0.82;
   }
 }
 html{
-background-color: #ffffff;
+background-image: url(ppp.jpg);
   background-size: cover;
-}
-.navigation {
-    position: relative;
-    width: 800px;
-    height: 40px;
-    align-items: center;
-    text-align: center;
-background-color: #00000000;
-background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    margin-top: 50px;
 }
 .navigation ul {
     display: flex;
@@ -170,18 +161,20 @@ background-size: cover;
 .navigation ul li button .icon {
     position: relative;
     display: block;
-    line-height: 80px;
-    font-size: 1.7em;
+    line-height: 95px;
+    font-size: 1.6em;
     text-align: center;
-    color: #ff0000;
-    transition: .5s;
+    color: #ffffff;
+    transition: 1.0s;
+    word-spacing: 9px;
 }
 .navigation ul li.active button .icon {
     transform: translateY(-32px);
+    color: #ff0000;
 }
 .navigation ul li button .text {
     position: absolute;
-    color: #000000;
+    color: #ffffff;
     font-weight: 400;
     font-size: .75em;
     letter-spacing: .05em;
@@ -196,22 +189,19 @@ background-size: cover;
 .navigation ul li button .circle {
     position: absolute;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background: transparent;
     border-radius: 60%;
-    border: 1.8px solid #ffffff;
+    border: 1.8px solid #ff0000;
+    background-color: rgba(255, 255, 255, 0);
     transform: translateY(-37px) scale(0);
 }
 .navigation ul li.active button .circle {
-    transition: 0.1s;
-    transition-delay: .5s;
+    transition: 1.0s;
+    transition-delay: 1.0s;
     transform: translateY(-37px) scale(1);
 }
-.circle{
-  background-color: #ff4444;
-}
-
     </style>
 </head>
 <body>
@@ -260,24 +250,12 @@ background-size: cover;
 
 <div class="container">
     <div class="content" id="window1">
-        //<----------contents of window 1---------->>//
-        <h2>Window 1 </h2>
-        <p></p>
     </div>
     <div class="content" id="window2">
-        //<----------contents of window 2---------->>//
-        <h2>Window 2 </h2>
-        <p></p>
     </div>
     <div class="content" id="window3">
-        //<----------contents of window 3---------->>//
-        <h2>Window 3 </h2>
-        <p></p>
     </div>
     <div class="content" id="window4">
-        //<----------contents of window 4---------->>//
-        <h2>Window 4 </h2>
-        <p></p>
     </div>
 </div>
 
