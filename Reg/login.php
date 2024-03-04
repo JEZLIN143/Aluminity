@@ -84,10 +84,8 @@ session_start();
                 
                 <input type="email" placeholder="Email" class="email" name="user_name" id="text" type="text" name="user_name">
                 <input type="password" placeholder="Password" id="password" class="password" name="password" id="text" type="password" name="password">
-<form action="forgotpassworf.php">
-                <a href="Reset.html">Forget Your Password?</a>
+                <a href="reset.php">Forget Your Password?</a>
                 <button class="cl" value="Login" type="submit" id="button" id="button" type="submit" value="Login"><a href="Content.html" style="color: white;">Sign In</a></button>
-            </form>
         </form>
         </div>
         <div class="toggle-container">
