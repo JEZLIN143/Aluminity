@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+    <fieldset>
+        
+    <h2><u>Transaction Page</u></h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        Please scan the QR code provided using your designated transaction application, then proceed to capture a screenshot of the transaction confirmation and upload it to the page. Thank you for your cooperation.        <label></label>
+        <br><br>
+        <label for="image">Upload Transaction Screenshot:</label><br><br>
+        <input type="file" class="buton" id="image" name="image" accept="image/*" required><br><br>
+        <button type="submit" value="" class="buton">Upload Image</button>
+    </form>
+    <br>
+    <br>
+    <label>QR CODE</label>
+    <fieldset class="qr">
+        
+    </fieldset>
+    </fieldset>
+</body>
+<style>
+    button{
+        background-color: rgb(147, 147, 255);
+        border-width: 0px;
+        border-radius: 9px;
+        padding: 9px;
+        box-shadow: black;
+        padding: 10px;
+    }
+    button:hover{
+        background-color: red;
+    }
+    .qr{
+        width: 120px;
+        height: 120px;
+        background-image: url(qrcode_106244172_c67e9f585d27720c7873fe94d91819f7.png);
+        background-size: cover;
+        margin-left: 600px;
+        border-width: 0px;
+        padding: 90px;
+    }
+    fieldset{
+        align-items: center;
+        text-align: center;
+        border-radius: 12px;
+        border-width: 1px;
+        border-color: rgb(63, 62, 62);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+</style>
+</html>
