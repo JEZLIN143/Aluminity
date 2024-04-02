@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>aboutusmore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+<style>
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'poppins',sans-serif;
+
+
+}
+.section{
+    width:100%;
+    min-height:100vh;
+    background-color:#f7f7f7;
+    font-family: 'poppins',sans-serif;
+}
+.container{
+    width:80%;
+    display:block;
+    margin:auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: left;
+    width:55%;
+
+
+}
+
+.content-section .title{
+    text-transform: uppercase;
+    font-size:28px;
+    color:#4d4c4c;
+
+}
+
+.content-section .content p{
+    margin-top:10px;
+    font-family:sans-serif;
+    font-size:18px;
+    color:#4d4c4c;
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        width:80%;
+        display:block;
+        margin:auto;
+        padding-top:50px;
+
+    }
+    .content-section{
+    float:none;
+    width:100%;
+    display: block;
+    margin:auto;
+
+}
+.content-section.title{
+    text-align:center;
+    font-size:19px;
+    color:#4d4c4c;
+}
+
+
+
+}
+
+nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background: rgb(50, 54, 54);
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999; /* Ensures it's above other content */
+    transition: top 0.3s; /* Smooth transition effect */
+    /* Additional styling for your navbar */
+}
+
+.logo {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: deepskyblue;
+}
+
+#newspan {
+    color: #fff;
+}
+
+.menu {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 30px;
+    transition: .9s;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: deepskyblue;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.menu li.active a {
+    color: deepskyblue; /* Change color to indicate the active state */
+    font-weight: bold; /* You can add any other styles to indicate the active state */
+}
+.bar {
+    display: none;
+    cursor: pointer;
+}
+
+.bar div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all .5s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .menu {
+        position: absolute;
+        right: -100%;
+        height: 90vh;
+        top: 10vh;
+        background-color: #444343;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+    .bar {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(-100%);
+}
+
+.bar-active .bar-1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bar-active .bar-2 {
+    opacity: 0;
+}
+
+.bar-active .bar-3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Logo Styles */
+.logo {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.logo h5 {
+    margin: 0;
+    font-size: 24px;
+    transition: transform 0.8s ease, opacity 0.3s ease;
+}
+
+.logo:hover h5 {
+    transform: scale(1.2);
+}
+
+.logo span {
+    color: deepskyblue;
+    animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.footer {
+    position:static;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color:#f7f7f7;
+    font-weight: 600;
+    font-size:  16px; /* Adjust font size as needed */
+    z-index: 999; /* Ensure the footer stays on top of other content */
+}
+
+.footer .icon {
+    margin-top: 10px; /* Adjust spacing between text and icons as needed */
+}
+
+.footer .icon i {
+    margin: 0 5px; /* Adjust spacing between icons as needed */
+}
+.icon .fa{
+    color: #000000;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 20px 0 ;
+}
+
+
+    </style>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <a href="home.html" class="logo">
+                    <h5>alumn<span>IT</span><span id="newspan">y</span></h5>
+                    </a>
+            </div>
+            <ul class="menu">
+                <li><a href="department.html">DEPARTMENT</a></li>
+                <li><a href="alumni.html">ALUMNI</a></li>
+                <li><a href="students.html">STUDENTS</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="contactus.html">CONTACT&nbsp;US</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+
+            </ul>
+            <div class="bar">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="section">
+        <div class="container">
+            
+                <div class="title ">
+                    <h1>Know more about AlumnITy</h1>
+                </div>
+                <div class="content">
+                    
+                        <p style="line-height: 2;">   Alumnity enables the IT department to effectively manage and nurture lifelong relationships with their graduates while providing valuable resources and opportunities for alumni to stay connected, support their alma mater, and advance their personal and professional goals.
+
+                            <p style="line-height: 2;">
+                                <strong>Key features of Alumnity include:</strong>
+                                <ul style="line-height: 2;">
+                                    <li><strong>Alumni Directory:</strong> Alumnity provides a searchable database of alumni profiles, allowing users to connect with former classmates, mentors, and industry peers based on various criteria such as graduation year, location, and profession.</li>
+                                    <li><strong>Events Management:</strong> The platform facilitates the organization and promotion of alumni events, reunions, seminars, and networking sessions. Users can RSVP, access event details, and engage in discussions to enhance their participation and networking opportunities.</li>
+                                    <li><strong>Career Resources:</strong> Alumnity offers a dedicated job portal where alumni can access job postings, internship opportunities, career resources, and mentorship connections to support their professional development and advancement.</li>
+                                    <li><strong>Fundraising and Donations:</strong> Institutions can leverage Alumnity to organize fundraising campaigns, donation drives, and alumni giving programs. Alumni can contribute to scholarships, academic initiatives, and infrastructure projects to support their alma mater's continued growth and success.</li>
+                                    <li><strong>Communication Tools:</strong> Alumnity's public chat feature serves as a dynamic platform for alumni, students, faculty, and administrators to engage in real-time conversations, share insights, and foster meaningful connections. By facilitating open dialogue and collaboration, the public chat feature enhances networking opportunities, encourages knowledge exchange, and strengthens the sense of community within the Alumnity ecosystem.</li>
+                                    <li><strong>Data Management and Analytics:</strong> The platform centralizes alumni data, including contact information, employment history, and engagement metrics, to provide valuable insights for targeted communication, event planning, and fundraising strategies. Analytics and reporting tools enable institutions to track system usage, user engagement, and fundraising progress effectively.</li>
+                                    <li><strong>Alumni & Student achievments</strong> The achievements of alumni and students are prominently displayed on Alumnity, showcasing their successes and contributions to various fields. These achievements may include academic accolades, professional accomplishments, research breakthroughs, entrepreneurial ventures, community service initiatives, and more. </li>
+                                </ul>
+                                
+                            </p>
+                            
+                            
+                            
+                            </p>
+                            
+                            
+                            
+                            
+                        
+                        
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <section class="footer" id="footer">
+        
+        <p style="color: black;font-weight: bold;">Connecting Paths, Empowering Futures: AlumnITy</p>
+        <div class="icon">
+            <i class="fab fa-facebook-f"></i> <!-- Change icon class to 'fab' for Facebook -->
+            <i class="fab fa-twitter"></i> <!-- Change icon class to 'fab' for Twitter -->
+            <i class="fab fa-instagram"></i> <!-- Change icon class to 'fab' for Instagram -->
+            <i class="fab fa-linkedin"></i> <!-- Change icon class to 'fab' for LinkedIn -->
+        </div>
+        <p style="color: black;font-weight: bold;">&copy<span id="currentYear">2023</span>Fantastic4</p>                                   
+    </section>
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+    const currentLocation = location.pathname;
+    const menuItem = document.querySelectorAll('.menu a');
+
+    menuItem.forEach(item => {
+        const href = item.getAttribute('href');
+        if (currentLocation.endsWith(href)) {
+            item.parentNode.classList.add('active');
+        }
+    });
+});
+
+
+        
+        const sidenav = () => {
+            const menu = document.querySelector('.bar');
+            const nav = document.querySelector('.menu');
+        
+            menu.addEventListener('click', () => {
+                menu.classList.toggle('bar-active');
+                nav.classList.toggle('nav-active');
+            });
+        };
+        sidenav();
+        
+        const yearSpan = document.querySelector('#currentYear');
+        const currentYear = new Date();
+        yearSpan.innerText = currentYear.getFullYear();
+        </script>
+        
+</body>
+</html>
