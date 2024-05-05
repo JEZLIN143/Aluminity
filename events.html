@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Tracker</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        color: rgb(51, 51, 51);
+    }
+    .box {
+        width: 45%;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 16px;
+    }
+    .box h2 {
+        margin-top: 0;
+    }
+    .event {
+        margin-bottom: 10px;
+    }
+    .upcoming {
+        background-color: #00e1ff77;
+    }
+    .finished {
+        background-color: #8400ff7e;
+    }
+    h1{
+        align-items: center;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .upcoming-r{
+        background-color: rgb(99, 99, 99);
+        color: white;
+    }
+    .finished-r{
+        background-color: red;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1>Events Information</h1>
+<div class="container">
+    <div class="box upcoming">
+        <h2>Upcoming Events</h2>
+        <div class="event">Event 1 - May 10, 2024</div>
+        <div class="event">Event 2 - May 15, 2024</div>
+        <div class="event">Event 3 - May 20, 2024</div>
+    </div>
+    <div class="box finished">
+        <h2>Finished Events</h2>
+        <div class="event">Event 4 - May 1, 2024</div>
+        <div class="event">Event 5 - April 25, 2024</div>
+        <div class="event">Event 6 - April 20, 2024</div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="box upcoming-r">
+        <h2>Event Not Confirmed</h2>
+        <div class="event">Event 1 - May 10, 2024</div>
+        <div class="event">Event 2 - May 15, 2024</div>
+        <div class="event">Event 3 - May 20, 2024</div>
+    </div>
+    <div class="box finished-r">
+        <h2>Events Cancelled</h2>
+        <div class="event">Event 4 - May 1, 2024</div>
+        <div class="event">Event 5 - April 25, 2024</div>
+        <div class="event">Event 6 - April 20, 2024</div>
+    </div>
+</div>
+</body>
+</html>
