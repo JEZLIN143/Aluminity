@@ -1,0 +1,84 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 09, 2024 at 09:13 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `picture`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `picture`
+--
+
+CREATE TABLE `picture` (
+  `photo_id` int(255) NOT NULL,
+  `photo_data` blob NOT NULL,
+  `date` date NOT NULL,
+  `photo_name` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `picture`
+--
+
+INSERT INTO `picture` (`photo_id`, `photo_data`, `date`, `photo_name`, `description`) VALUES
+(11, 0x696d6167655f7365617263685f313639353838373532353030362e6a7067, '2024-05-24', '', 'xxxxsxsxsxsx'),
+(12, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(13, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(14, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(15, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(16, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(17, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(18, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(19, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(20, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(21, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(22, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(23, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(24, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(25, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(26, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed'),
+(27, 0x416365725f57616c6c70617065725f30355f3338343078323430302e6a7067, '2024-05-26', '', 'sxsxsxsxsxeedededed');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `picture`
+--
+ALTER TABLE `picture`
+  ADD UNIQUE KEY `photo_id` (`photo_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `picture`
+--
+ALTER TABLE `picture`
+  MODIFY `photo_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
