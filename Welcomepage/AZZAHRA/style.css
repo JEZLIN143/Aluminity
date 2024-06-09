@@ -1,12 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;f
+    box-sizing: border-box;
     font-family: sans-serif;
 }
+
 /*nav*/
 
-nav{
+nav {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -17,22 +18,25 @@ nav{
     min-height: 10vh;
     background: #000;
 }
+
 .logo {
-	color: #fff;
-	text-transform: capitalize;
-	font-size: 24px;
-	cursor: pointer;
-	font-weight: 1000;
-	letter-spacing: 1px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 1000;
+    letter-spacing: 1px;
 }
-.logo span{
-    color: deepskyblue; 
+
+.logo span {
+    color: deepskyblue;
 }
-#newspan{
+
+#newspan {
     color: #fff;
 }
 
-.menu{
+.menu {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -41,10 +45,12 @@ nav{
     justify-content: space-around;
     width: 30%;
 }
-.menu li{
+
+.menu li {
     list-style: none;
 }
-.menu a{
+
+.menu a {
     color: #fff;
     text-decoration: none;
     font-size: 15px;
@@ -52,32 +58,38 @@ nav{
     transition: .9s;
     font-weight: 600;
 }
+
 .menu a:hover {
-	color: deepskyblue;
-	font-weight: 500;
+    color: deepskyblue;
+    font-weight: 500;
     letter-spacing: 2px;
 }
-.bar{
+
+.bar {
     display: none;
     cursor: pointer;
 }
-.bar div{
+
+.bar div {
     width: 25px;
     height: 3px;
     background-color: #fff;
     margin: 5px;
     transition: all .5s ease;
 }
-@media screen and (max-width:1024px){
-    .menu{
+
+@media screen and (max-width:1024px) {
+    .menu {
         width: 60%;
     }
 }
-@media screen and (max-width:768px){
-    body{
+
+@media screen and (max-width:768px) {
+    body {
         overflow-x: hidden;
     }
-    .menu{
+
+    .menu {
         position: absolute;
         right: -100%;
         height: 90vh;
@@ -94,66 +106,103 @@ nav{
         transform: translateX(100%);
         transition: transform 0.5s ease-in-out;
     }
-    .bar{
+
+    .bar {
         display: block;
     }
 }
 
-.nav-active{
+.nav-active {
     transform: translateX(-100%);
 }
-.bar-active .bar-1{
+
+.bar-active .bar-1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
-.bar-active .bar-2{
+
+.bar-active .bar-2 {
     opacity: 0;
 }
-.bar-active .bar-3{
+
+.bar-active .bar-3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
 
-#about {
+/* #about {
     text-align: left;
-}
+} */
 
 .banner {
     background-image: url();
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
     background-position: center;
+
+    /* background-color: #1111117f; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper {
-    width: 1060px;
+    width: 100%;
     margin: auto;
-    padding-top: 12%;
+    /* padding-top: 12%; */
+
+    /* display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; */
 }
 
 .content {
-    padding: 20px;
+    /* background-color: red; */
+    /* padding: 20px; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
+
 .content h2 {
+    background-image: url(./../../ipad1.jpg);
+    background-size: 10rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #000000;
-    font-size: 60px;
+    font-weight: bolder;
+    font-size: 12rem;
+    /* color: #000000; */
+    /* background-position: -50% ; */
+    animation: randomMovement 75s infinite linear;
+
 }
+@keyframes randomMovement {
+    0% { background-position:-50% ; }
+    100% { background-position: 50% ; }
+  }
 
 .content p {
     font-family: 'Times New Roman', Times, serif;
-    width: 50%;
+    font-size: 2rem;
+    width: 100%;
     color: rgba(0, 0, 0, 0.6);
     line-height: 2;
 }
 
 .content a {
-    background: deepskyblue;
+    /* border */
+    background: rgb(2, 99, 244);
     text-decoration: none;
     padding: 15px 30px;
-    color: #000000;
+    color: #fff;
     display: inline-block;
     margin-top: 20px;
+    font-weight: bolder;
 }
 
 .socials i {
@@ -166,37 +215,44 @@ nav{
     margin-top: 30px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .wrapper {
         width: 75%;
         padding-top: 26%;
     }
-    .content{
+
+    .content {
         text-align: center;
     }
+
     .content h2 {
         font-size: 60px;
     }
+
     .content p {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .banner {
         background-position: 60%;
     }
+
     .wrapper {
         width: 75%;
         padding-top: 26%;
     }
+
     .content h2 {
         font-size: 30px;
     }
+
     .content p {
         width: 100%;
     }
 }
+
 /* Add these styles to your existing style.css or within <style> tag in <head> */
 
 .logo {
@@ -209,16 +265,19 @@ nav{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     font-size: 30px;
-    color: #ffffff; /* Adjust color as needed */
+    color: #ffffff;
+    /* Adjust color as needed */
     transition: transform 0.8s ease, opacity 0.3s ease;
 }
 
 .logo:hover h5 {
-    transform: scale(1.2); /* Increase size on hover */
+    transform: scale(1.2);
+    /* Increase size on hover */
 }
 
 #newspan {
-    color: #ffffff; /* Adjust color as needed */
+    color: #ffffff;
+    /* Adjust color as needed */
 }
 
 /* Add the following keyframes for a fade-in effect */
@@ -226,42 +285,49 @@ nav{
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
 .logo h5 span {
-    animation: fadeIn 3s ease; /* Apply fade-in animation to each span */
+    animation: fadeIn 3s ease;
+    /* Apply fade-in animation to each span */
 }
 
 
-.course{
+.course {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    
+
 }
-.course p{
+
+.course p {
     font-size: 100%;
 }
-h1{
+
+h1 {
     font-size: 36px;
     font-weight: 600;
 }
-p{
+
+p {
     color: #000000;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
 }
-.row{
+
+.row {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -308,7 +374,8 @@ h3 {
 }
 
 .column:hover {
-    transform: scale(1.05); /* Adjust the scale factor as needed for the desired zoom-out effect */
+    transform: scale(1.05);
+    /* Adjust the scale factor as needed for the desired zoom-out effect */
     box-shadow: 0 8px 16px rgba(233, 91, 91, 0.2);
 }
 
@@ -319,29 +386,32 @@ h3 {
 
 
 
-@media(max-width:700px){
-    .row{
+@media(max-width:700px) {
+    .row {
         flex-direction: column;
     }
 }
 
-.footer{
+.footer {
     width: 100%;
     text-align: center;
     padding: 30px 0;
 }
-.footer h4{
+
+.footer h4 {
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
 }
-.icon .fa{
+
+.icon .fa {
     color: #000000;
     margin: 0 13px;
     cursor: pointer;
-    padding: 18px 0 ;
+    padding: 18px 0;
 }
-.fa-heart-o{
+
+.fa-heart-o {
     color: #f44336;
 }
 
@@ -361,12 +431,15 @@ body {
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Adjust as needed for the desired spacing */
+    justify-content: space-around;
+    /* Adjust as needed for the desired spacing */
 }
 
 .box {
-    width: 45%; /* Adjust to leave space for margins and ensure two boxes fit in a row */
-    margin: 10px; /* Adjust margin as needed */
+    width: 45%;
+    /* Adjust to leave space for margins and ensure two boxes fit in a row */
+    margin: 10px;
+    /* Adjust margin as needed */
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
@@ -405,9 +478,7 @@ body {
     opacity: 1;
 }
 
-.content {
-    padding: 20px;
-}
+
 
 /*engage*/
 
@@ -460,6 +531,7 @@ p {
         width: 100%;
     }
 }
+
 /* Achieve*/
 
 body {
